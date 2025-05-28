@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const About: React.FC = () => {
@@ -11,7 +12,7 @@ const About: React.FC = () => {
           E-Math Education adalah platform pembelajaran matematika interaktif yang bertujuan membantu siswa memahami konsep matematika dengan mudah, menyenangkan, dan aplikatif.
         </p>
         <div className="flex flex-col md:flex-row gap-8 items-center justify-center mb-6">
-          <img
+          <Image
             src="https://img.freepik.com/free-vector/mathematics-concept-illustration_114360-729.jpg?w=400"
             alt="About E-Math"
             className="w-60 h-60 object-cover rounded-xl shadow"

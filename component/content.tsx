@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 // Helper untuk mengambil ID video dari URL YouTube
@@ -116,7 +117,7 @@ const Content: React.FC = () => {
               key={idx}
               className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 transition"
             >
-              <img
+              <Image
                 src={thumbnail}
                 alt={item.title}
                 className="w-full h-40 object-cover rounded-lg mb-4"
