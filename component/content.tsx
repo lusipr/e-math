@@ -103,7 +103,7 @@ const materi = [
 
 const Content: React.FC = () => {
   return (
-    <div className="mt-16 w-full flex flex-col items-center">
+    <div className="mt-16 w-full flex flex-col items-center mb-12">
       <h2 className="text-2xl font-bold text-blue-800 mb-8">Materi Populer</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-5xl">
         {materi.map((item, idx) => {
