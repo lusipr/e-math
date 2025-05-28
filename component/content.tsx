@@ -25,7 +25,7 @@ const materi = [
     desc: "Belajar mengenal berbagai bangun datar dan cara menghitung kelilingnya.",
     url: "https://youtu.be/ipmcPCLnRTY?si=nCCz4mNHNb5yDEwo",
   },
- {
+  {
     title: "Operasi Hitung Bilangan Bulat",
     desc: "Pelajari cara menjumlah, mengurang, mengalikan, dan membagi bilangan bulat dengan mudah.",
     url: "https://youtu.be/IMe0c7Uzwes?si=qjjMEgL-cCtJytiN",
@@ -118,6 +118,8 @@ const Content: React.FC = () => {
               className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 transition"
             >
               <Image
+                width={480} // tambahkan width
+                height={360} // tambahkan height
                 src={thumbnail}
                 alt={item.title}
                 className="w-full h-40 object-cover rounded-lg mb-4"

@@ -9,10 +9,14 @@ const About: React.FC = () => {
           Tentang E-Math Education
         </h2>
         <p className="text-gray-700 mb-6 text-center text-lg">
-          E-Math Education adalah platform pembelajaran matematika interaktif yang bertujuan membantu siswa memahami konsep matematika dengan mudah, menyenangkan, dan aplikatif.
+          E-Math Education adalah platform pembelajaran matematika interaktif
+          yang bertujuan membantu siswa memahami konsep matematika dengan mudah,
+          menyenangkan, dan aplikatif.
         </p>
         <div className="flex flex-col md:flex-row gap-8 items-center justify-center mb-6">
           <Image
+            width={480} // tambahkan width
+            height={360} // tambahkan height
             src="https://img.freepik.com/free-vector/mathematics-concept-illustration_114360-729.jpg?w=400"
             alt="About E-Math"
             className="w-60 h-60 object-cover rounded-xl shadow"
@@ -25,7 +29,8 @@ const About: React.FC = () => {
           </ul>
         </div>
         <div className="text-center text-gray-500 text-sm">
-          Dibuat dengan ❤️ oleh tim E-Math Education untuk pendidikan Indonesia yang lebih baik.
+          Dibuat dengan ❤️ oleh tim E-Math Education untuk pendidikan Indonesia
+          yang lebih baik.
         </div>
       </div>
     </div>
