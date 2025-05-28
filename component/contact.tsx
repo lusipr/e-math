@@ -54,10 +54,10 @@ const ContactComponent: React.FC = () => {
         <div className="mt-8 text-center text-gray-500 text-sm">
           Atau email ke:{" "}
           <a
-            href="mailto:lusipr142@gmail.com.com"
+            href="mailto:lusipr142@gmail.com"
             className="text-blue-600 underline hover:text-blue-800"
           >
-            lusipr142@gmail.com.com
+            lusipr142@gmail.com
           </a>
         </div>
       </div>
