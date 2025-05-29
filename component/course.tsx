@@ -37,6 +37,26 @@ const questions = [
     ],
     answer: "x² - 3x - 10",
   },
+   {
+    question: "Jika x = 3, maka nilai dari 2x² - 5x + 4 adalah ...",
+    options: ["7", "13", "1", "10"],
+    answer: "7",
+  },
+  {
+    question: "Hasil dari (x + 4)² adalah ...",
+    options: [
+      "x² + 8x + 16",
+      "x² + 4x + 16",
+      "x² + 16",
+      "x² + 4x + 8"
+    ],
+    answer: "x² + 8x + 16",
+  },
+  {
+    question: "Gradien garis yang sejajar dengan garis y = 5x - 2 adalah ...",
+    options: ["5", "-2", "1/5", "2"],
+    answer: "5",
+  },
 ];
 
 const Course: React.FC = () => {

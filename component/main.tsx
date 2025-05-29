@@ -9,7 +9,7 @@ const MainComponent = () => {
           <h1 className="text-4xl font-extrabold text-blue-900 mb-4">
             MATH EDUCATION
           </h1>
-          <p className="text-gray-700 mb-8">
+          <p className="text-black-700 mb-8">
             Belajar matematika jadi lebih mudah dan menyenangkan! Temukan
             materi, latihan soal, dan video pembelajaran interaktif untuk semua
             jenjang.
