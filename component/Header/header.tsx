@@ -35,6 +35,12 @@ export default function Header() {
           >
             About
           </Link>
+           <Link
+            href="/materi"
+            className="hover:text-yellow-300 transition-colors"
+          >
+            Materi
+          </Link>
           <Link
             href="/courses"
             className="hover:text-yellow-300 transition-colors"
@@ -76,6 +82,13 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
             >
               About
+            </Link>
+            <Link
+              href="/materi"
+              className="text-blue-700 hover:text-pink-500 transition-colors"
+              onClick={() => setMenuOpen(false)}
+            >
+              Materi
             </Link>
             <Link
               href="/courses"
