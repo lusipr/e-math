@@ -27,119 +27,145 @@ const questions = [
     options: ["2", "1", "3", "4"],
     answer: "2",
   },
+   {
+    question: "Jika a = 2 dan b = -3, maka nilai dari a² + 2ab + b² adalah ...",
+    options: ["1", "4", "9", "25"],
+    answer: "1",
+  },
   {
-    question: "Bentuk sederhana dari (x + 2)(x - 5) adalah ...",
-    options: [
-      "x² - 3x - 10",
-      "x² - 3x + 10",
-      "x² + 7x - 10",
-      "x² - 7x + 10",
-    ],
-    answer: "x² - 3x - 10",
+    question: "Gradien garis yang melalui titik (2,3) dan (4,7) adalah ...",
+    options: ["2", "1", "3", "4"],
+    answer: "2",
   },
    {
-    question: "Jika x = 3, maka nilai dari 2x² - 5x + 4 adalah ...",
-    options: ["7", "13", "1", "10"],
-    answer: "7",
+    question: "Jika a = 2 dan b = -3, maka nilai dari a² + 2ab + b² adalah ...",
+    options: ["1", "4", "9", "25"],
+    answer: "1",
   },
   {
-    question: "Hasil dari (x + 4)² adalah ...",
-    options: [
-      "x² + 8x + 16",
-      "x² + 4x + 16",
-      "x² + 16",
-      "x² + 4x + 8"
-    ],
-    answer: "x² + 8x + 16",
-  },
-  {
-    question: "Gradien garis yang sejajar dengan garis y = 5x - 2 adalah ...",
-    options: ["5", "-2", "1/5", "2"],
-    answer: "5",
+    question: "Gradien garis yang melalui titik (2,3) dan (4,7) adalah ...",
+    options: ["2", "1", "3", "4"],
+    answer: "2",
   },
 ];
 
 const Course: React.FC = () => {
-  const [selected, setSelected] = useState<(string | null)[]>(Array(questions.length).fill(null));
-  const [showResult, setShowResult] = useState(false);
+  const [selected, setSelected] = useState<(string | null)[]>(
+    Array(questions.length).fill(null)
+  );
+  const [isCorrect, setIsCorrect] = useState<boolean[]>(
+    Array(questions.length).fill(false)
+  );
+  const [submitted, setSubmitted] = useState<boolean[]>(
+    Array(questions.length).fill(false)
+  );
+
+  // 🔓 unlock soal
+  const isUnlocked = (idx: number) => {
+    if (idx === 0) return true;
+    return isCorrect[idx - 1];
+  };
 
   const handleSelect = (qIdx: number, option: string) => {
+    if (!isUnlocked(qIdx)) return;
+
     const newSelected = [...selected];
     newSelected[qIdx] = option;
     setSelected(newSelected);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setShowResult(true);
+  const handleSubmitAnswer = (idx: number) => {
+    if (!selected[idx]) return;
+
+    const newSubmitted = [...submitted];
+    const newCorrect = [...isCorrect];
+
+    newSubmitted[idx] = true;
+    newCorrect[idx] = selected[idx] === questions[idx].answer;
+
+    setSubmitted(newSubmitted);
+    setIsCorrect(newCorrect);
   };
 
-  const correctCount = selected.filter(
-    (ans, idx) => ans === questions[idx].answer
-  ).length;
+  const score = isCorrect.filter(Boolean).length;
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-400 py-16 px-4">
-      <div className="bg-white rounded-3xl shadow-2xl p-10 max-w-4xl w-full">
-        <h2 className="text-3xl font-extrabold text-blue-900 mb-6 text-center">
-          Latihan Soal Matematika SMA Kelas 10
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-400 p-6">
+      <div className="bg-white rounded-3xl shadow-2xl p-10 max-w-3xl w-full">
+        <h2 className="text-2xl font-bold text-center mb-6 text-blue-900">
+          Latihan Soal Matematika
         </h2>
-        <form onSubmit={handleSubmit} className="space-y-8">
+
+        <div className="space-y-6">
           {questions.map((q, idx) => (
-            <div
-              key={idx}
-              className="bg-blue-50 rounded-xl p-6 shadow flex flex-col gap-4"
-            >
-              <div className="font-semibold text-blue-800">
+            <div key={idx} className="p-5 bg-blue-50 rounded-xl shadow">
+              <p className="font-semibold text-blue-800 mb-3">
                 {idx + 1}. {q.question}
-              </div>
-              <div className="grid grid-cols-2 gap-4">
+              </p>
+
+              {!isUnlocked(idx) && (
+                <p className="text-sm text-gray-500 mb-2">
+                  🔒 Selesaikan soal sebelumnya dulu
+                </p>
+              )}
+
+              <div className="grid grid-cols-2 gap-3">
                 {q.options.map((opt) => (
                   <button
                     key={opt}
                     type="button"
-                    className={`px-4 py-2 rounded-lg border transition
+                    disabled={!isUnlocked(idx)}
+                    onClick={() => handleSelect(idx, opt)}
+                    className={`p-2 rounded border
                       ${
                         selected[idx] === opt
-                          ? "bg-blue-500 text-white border-blue-700"
-                          : "bg-white text-blue-900 border-blue-300 hover:bg-blue-100"
+                          ? "bg-blue-500 text-white"
+                          : "bg-white"
+                      }
+                      ${
+                        !isUnlocked(idx)
+                          ? "opacity-50 cursor-not-allowed"
+                          : "hover:bg-blue-100"
                       }
                     `}
-                    disabled={showResult}
-                    onClick={() => handleSelect(idx, opt)}
                   >
                     {opt}
                   </button>
                 ))}
               </div>
-              {showResult && (
+
+              {/* 🔘 tombol submit per soal */}
+              <button
+                type="button"
+                onClick={() => handleSubmitAnswer(idx)}
+                disabled={!selected[idx] || !isUnlocked(idx)}
+                className="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 disabled:opacity-50"
+              >
+                Submit Jawaban
+              </button>
+
+              {/* 📢 hasil */}
+              {submitted[idx] && (
                 <div className="mt-2">
-                  {selected[idx] === q.answer ? (
+                  {isCorrect[idx] ? (
                     <span className="text-green-600 font-semibold">
-                      Jawaban benar!
+                      ✅ Benar!
                     </span>
                   ) : (
                     <span className="text-red-600 font-semibold">
-                      Jawaban salah. Jawaban yang benar: {q.answer}
+                      ❌ Salah, coba lagi
                     </span>
                   )}
                 </div>
               )}
             </div>
           ))}
-          {!showResult ? (
-            <button
-              type="submit"
-              className="w-full bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold py-3 rounded-full shadow hover:scale-105 transition"
-            >
-              Cek Jawaban
-            </button>
-          ) : (
-            <div className="text-center text-lg font-bold text-blue-800">
-              Skor kamu: {correctCount} dari {questions.length} soal
-            </div>
-          )}
-        </form>
+        </div>
+
+        {/* skor */}
+        <div className="mt-8 text-center font-bold text-blue-900">
+          Skor: {score} / {questions.length}
+        </div>
       </div>
     </div>
   );
