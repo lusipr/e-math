@@ -35,31 +35,6 @@ export default function SPLDVGraph() {
 
   return (
     <div className="space-y-4">
-      <div className="bg-gray-100 p-4 rounded">
-        <p className="font-semibold mb-2">Persamaan 1</p>
-        <div className="flex gap-2">
-          <input type="number" value={a1} onChange={(e) => setA1(+e.target.value)} className="w-16 p-1 border rounded" /> x +
-          <input type="number" value={b1} onChange={(e) => setB1(+e.target.value)} className="w-16 p-1 border rounded" /> y =
-          <input type="number" value={c1} onChange={(e) => setC1(+e.target.value)} className="w-16 p-1 border rounded" />
-        </div>
-      </div>
-
-      <div className="bg-gray-100 p-4 rounded">
-        <p className="font-semibold mb-2">Persamaan 2</p>
-        <div className="flex gap-2">
-          <input type="number" value={a2} onChange={(e) => setA2(+e.target.value)} className="w-16 p-1 border rounded" /> x +
-          <input type="number" value={b2} onChange={(e) => setB2(+e.target.value)} className="w-16 p-1 border rounded" /> y =
-          <input type="number" value={c2} onChange={(e) => setC2(+e.target.value)} className="w-16 p-1 border rounded" />
-        </div>
-      </div>
-
-      <button
-        onClick={handleSolve}
-        className="bg-blue-600 text-white px-4 py-2 rounded"
-      >
-        Hitung Titik Potong
-      </button>
-
       {result && (
         <div className="bg-green-100 p-3 rounded">
           Titik potong: ({result.x}, {result.y})

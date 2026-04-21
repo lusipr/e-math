@@ -30,10 +30,10 @@ export default function Header() {
             Home
           </Link>
           <Link
-            href="/about"
+            href="/menu"
             className="hover:text-yellow-300 transition-colors"
           >
-            About
+            Menu
           </Link>
            <Link
             href="/materi"
@@ -45,13 +45,19 @@ export default function Header() {
             href="/courses"
             className="hover:text-yellow-300 transition-colors"
           >
-            Courses
+            Latihan Soal
           </Link>
           <Link
             href="/contact"
             className="hover:text-yellow-300 transition-colors"
           >
             Contact
+          </Link>
+          <Link
+            href="/profile"
+            className="hover:text-yellow-300 transition-colors"
+          >
+            Profile
           </Link>
         </div>
         {/* Hamburger Icon */}
