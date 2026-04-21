@@ -41,6 +41,8 @@ export default function SPLDVGraph() {
         </div>
       )}
 
+      <video src="/assets/video/tutor-geo.mp4" controls className="w-full max-w-md mx-auto" />
+
       <GeoGebraGraph
         equations={[
           `${a1}x + ${b1}y = ${c1}`,

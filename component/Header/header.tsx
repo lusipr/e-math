@@ -35,18 +35,6 @@ export default function Header() {
           >
             Menu
           </Link>
-           <Link
-            href="/materi"
-            className="hover:text-yellow-300 transition-colors"
-          >
-            Materi
-          </Link>
-          <Link
-            href="/courses"
-            className="hover:text-yellow-300 transition-colors"
-          >
-            Latihan Soal
-          </Link>
           <Link
             href="/contact"
             className="hover:text-yellow-300 transition-colors"
