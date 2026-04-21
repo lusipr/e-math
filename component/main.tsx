@@ -3,45 +3,47 @@ import React from "react";
 
 const MainComponent = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-6 py-10 font-sans">
-      <div className="bg-white rounded-xl shadow-lg max-w-3xl w-full p-8">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-white font-sans">
+      {/* Card 1 */}
+      <Image
+        src="/assets/images/home3.png"
+        alt="Ilustrasi kantin"
+        width={500}
+        height={300}
+        className="rounded-md object-contain mx-auto"
+      />
+      {/* Card 2 */}
+      <div className="max-w-3xl w-full p-4">
         {/* Title */}
-        <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-          Pecahkan Misteri di Sekitarmu!
+        <h1 className="text-5xl md:text-3xl font-bold text-gray-900 mb-2">
+          #Serunya
         </h1>
-
+        <h1 className="text-5xl md:text-3xl font-bold text-gray-900 mb-2">
+          Belajar
+        </h1>
         {/* Subtitle */}
         <p className="text-gray-700 mb-4 italic">
-          Pernah bingung menghitung harga paketan menu di kantin tapi
-          penasaran harga satuannya?
+          Belajar matematika itu seru, apalagi kalau bisa langsung dipraktikkan
+          di kehidupan sehari-hari!
         </p>
-
-        {/* Description */}
-        <p className="text-gray-700 mb-6">
-          Misalkan di suatu kantin terdapat menu paketan seperti berikut!
-        </p>
-
-        {/* Image from assets */}
-        <div className="flex justify-center mb-6">
-          <div className="bg-yellow-100 rounded-lg p-3">
-            <Image
-              src="/assets/images/home1.png"
-              alt="Ilustrasi kantin"
-              width={500}
-              height={300}
-              className="rounded-md object-contain"
-            />
-          </div>
+        {/* Button */}
+        <div className="flex justify-center">
+          <button
+            className="
+      bg-[#3852b2] 
+      text-white 
+      px-6 py-3 
+      rounded-lg 
+      font-semibold 
+      shadow-[2px_4px_0_#f3be79]
+      hover:translate-y-0.5
+      hover:shadow-[1px_2px_0_#f3be79]
+      transition-all duration-200
+    "
+          >
+            Mulai Belajar
+          </button>
         </div>
-
-        {/* Bottom Explanation */}
-        <p className="text-gray-800">
-          Daripada bingung nebak-nebak,{" "}
-          <span className="font-bold">
-            (Sistem Persamaan Linear Dua Variabel) SPLDV
-          </span>{" "}
-          bisa kasih tahu kamu cara untuk hitung harga tersebut!
-        </p>
       </div>
     </div>
   );
