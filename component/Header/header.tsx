@@ -36,10 +36,10 @@ export default function Header() {
             About
           </Link>
            <Link
-            href="/materi"
+            href="/menu"
             className="hover:text-yellow-300 transition-colors"
           >
-            Materi
+            Menu
           </Link>
           <Link
             href="/courses"
