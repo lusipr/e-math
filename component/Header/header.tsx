@@ -16,7 +16,7 @@ export default function Header() {
     }));
 
   return (
-    <nav className="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-400 text-white shadow-md py-4">
+    <nav className="w-full bg-linear-to-r from-blue-500 via-purple-500 to-pink-400 text-white shadow-md py-4">
       <div className="container mx-auto flex items-center justify-between px-6">
         <Link
           href="/"
