@@ -81,7 +81,7 @@ const MetodeEliminasi = () => {
             Langkah 2, eliminasi variabel y, samakan koefisien y dengan
             mengalikan persamaan (2) dengan 1.
             <Image
-              src="/assets/images/eliminasi/elim1.png"
+              src="/assets/images/eliminasi/elim2.png"
               alt="eliminasi langkah 1"
               width={800}
               height={400}

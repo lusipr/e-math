@@ -170,16 +170,39 @@ const MateriSPLDV = () => {
         </p>
 
         <div className="grid md:grid-cols-4 gap-4">
-          <button className="bg-purple-200 p-3 rounded-lg">Grafik</button>
-          <button className="bg-purple-200 p-3 rounded-lg">Substitusi</button>
-          <button className="bg-purple-200 p-3 rounded-lg">Eliminasi</button>
-          <button className="bg-purple-200 p-3 rounded-lg">Campuran</button>
+          <Link
+            href={"/materi/metode-grafik"}
+            className="bg-purple-200 p-3 rounded-lg"
+          >
+            Grafik
+          </Link>
+          <Link
+            href={"/materi/metode-subtitusi"}
+            className="bg-purple-200 p-3 rounded-lg"
+          >
+            Substitusi
+          </Link>
+          <Link
+            href={"/materi/metode-eliminasi"}
+            className="bg-purple-200 p-3 rounded-lg"
+          >
+            Eliminasi
+          </Link>
+          <Link
+            href={"/materi/metode-campuran"}
+            className="bg-purple-200 p-3 rounded-lg"
+          >
+            Campuran
+          </Link>
         </div>
 
         <div className="text-center mt-6">
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition">
+          <Link
+            href={"/materi/metode-grafik"}
+            className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+          >
             Next
-          </button>
+          </Link>
         </div>
       </div>
     </div>
