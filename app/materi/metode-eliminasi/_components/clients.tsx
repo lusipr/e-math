@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 const MetodeEliminasi = () => {
@@ -103,14 +102,16 @@ const MetodeEliminasi = () => {
           </p>
 
           <ul className="list-disc list-inside text-gray-700 space-y-1">
-            <li>
-              x + y = 25
-              <br />
-              10 + 15 = 25
-              <br />
-              25 = 25 (terbukti)
+            <li className="flex items-start gap-3">
+              <div>
+                x + y = 25
+                <br />
+                10 + 15 = 25
+                <br />
+                25 = 25 (terbukti)
+              </div>
             </li>
-            <li>
+            <li className="flex items-start gap-3">
               2x + 4y = 80
               <br />
               2(10) + 4(15) = 80
@@ -138,20 +139,6 @@ const MetodeEliminasi = () => {
           halaman 420 sedangkan 1 buku matematika dan 2 buku IPA memiliki total
           halaman 300 halaman. Berapa jumlah halaman masing-masing buku?
         </p>
-      </div>
-
-      {/* CEK */}
-      <div className="bg-blue-100 p-6 rounded-2xl text-center shadow-lg mb-8">
-        <p className="mb-4">Cek kalkulator metode eliminasimu dibawah ini!</p>
-
-        <Link
-          href="https://petualangan-spldvku.my.canva.site/aplikasi-tanpa-judul"
-          target="_blank"
-        >
-          <button className="bg-purple-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition">
-            Buka Kalkulator
-          </button>
-        </Link>
       </div>
 
       {/* NEXT */}
