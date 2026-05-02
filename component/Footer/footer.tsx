@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-400 text-white py-6 shadow-inner">
+    <footer className="w-full bg-linear-to-r from-blue-500 via-purple-500 to-pink-400 text-white py-6 shadow-inner">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
         <div className="text-lg font-semibold mb-2 md:mb-0">
           © {new Date().getFullYear()} E-Math Education
