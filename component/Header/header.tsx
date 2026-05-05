@@ -29,28 +29,22 @@ export default function Header() {
             Home
           </Link>
           <Link
-            href="/about"
-            className="hover:text-yellow-300 transition-colors"
-          >
-            About
-          </Link>
-           <Link
             href="/menu"
             className="hover:text-yellow-300 transition-colors"
           >
             Menu
           </Link>
           <Link
-            href="/courses"
-            className="hover:text-yellow-300 transition-colors"
-          >
-            Courses
-          </Link>
-          <Link
             href="/contact"
             className="hover:text-yellow-300 transition-colors"
           >
             Contact
+          </Link>
+          <Link
+            href="/profile"
+            className="hover:text-yellow-300 transition-colors"
+          >
+            Profile
           </Link>
         </div>
         {/* Hamburger Icon */}
