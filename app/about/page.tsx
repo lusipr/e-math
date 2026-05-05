@@ -3,7 +3,7 @@ import React from "react";
 
 const About: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-400 py-16 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-r from-blue-500 via-purple-500 to-pink-400 py-16 px-4">
       <div className="bg-white rounded-3xl shadow-2xl p-10 max-w-3xl w-full">
         <h2 className="text-3xl font-extrabold text-blue-900 mb-4 text-center">
           Tentang E-Math Education

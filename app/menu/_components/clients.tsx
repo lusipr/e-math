@@ -4,16 +4,16 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 const topMenu = [
-  { img: "/assets/images/cptp.png", path: "/cp-tp" },
-  { img: "/assets/images/pengantar.png", path: "/pengantar" },
+  { img: "/assets/images/cptp.png", path: "/materi/cp-tp" },
+  { img: "/assets/images/pengantar.png", path: "/materi/pengantar-spldv" },
 ];
 
 const bottomMenu = [
-  { img: "/assets/images/metode-grafik.png", path: "/grafik" },
-  { img: "/assets/images/substitusi.png", path: "/substitusi" },
-  { img: "/assets/images/eliminasi.png", path: "/eliminasi" },
-  { img: "/assets/images/campuran.png", path: "/campuran" },
-  { img: "/assets/images/latihan-soal.png", path: "/latihan" },
+  { img: "/assets/images/metode-grafik.png", path: "/materi/metode-grafik" },
+  { img: "/assets/images/substitusi.png", path: "/materi/metode-substitusi" },
+  { img: "/assets/images/eliminasi.png", path: "/materi/metode-eliminasi" },
+  { img: "/assets/images/campuran.png", path: "/materi/metode-campuran" },
+  { img: "/assets/images/latihan-soal.png", path: "/materi/latihan-soal" },
   { img: "/assets/images/profile.png", path: "/profil" },
 ];
 
