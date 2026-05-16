@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import GeoGebraGraph from "./geobra";
+import Link from "next/link";
 
 const MetodeGrafik = () => {
   const a1 = 1,
@@ -13,11 +14,11 @@ const MetodeGrafik = () => {
   const result = { x: 3, y: 13 };
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-blue-100 to-yellow-50 p-6">
+    <div className="min-h-screen bg-[url('/assets/images/home/home2.png')] bg-cover bg-center bg-no-repeat p-6">
       {/* HERO */}
       <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
         <h1 className="text-2xl md:text-3xl font-bold text-blue-600 text-center">
-          Teks Metode Grafik
+          Metode Grafik
         </h1>
       </div>
 
@@ -114,15 +115,15 @@ const MetodeGrafik = () => {
                 titik-titik yang telah ditemukan.
               </p>
               <div className="flex justify-center">
-                <video
+                  <video
                   className="w-175 md:w-200 h-auto p-6 object-cover rounded-xl shadow-lg"
                   controls
                 >
                   <source
-                    src="/assets/images/grafik/video-2-langkah-b.mp4"
+                    src="/assets/images/grafik/video-1-langkah-b.mov"
                     type="video/mp4"
                   />
-                  Browser Anda tidak mendukung video.
+                  Browser Anda tidak mendukung video
                 </video>
               </div>
             </div>
@@ -179,10 +180,20 @@ const MetodeGrafik = () => {
       </div>
 
       {/* NEXT */}
-      <div className="text-center">
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition">
+      <div className="flex justify-center gap-4 mt-6">
+        <Link
+          href={"/materi/pengantar-spldv"}
+          className="bg-gray-500 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+        >
+          Prev
+        </Link>
+
+        <Link
+          href={"/materi/metode-subtitusi"}
+          className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+        >
           Next
-        </button>
+        </Link>
       </div>
     </div>
   );

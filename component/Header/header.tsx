@@ -7,6 +7,7 @@ import { useState } from "react";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const crumbs = pathname
     .split("/")
     .filter(Boolean)
@@ -16,7 +17,9 @@ export default function Header() {
     }));
 
   return (
-<nav className="sticky top-0 z-50 w-full bg-linear-to-r from-blue-500 via-purple-500 to-pink-400 text-white shadow-md py-2">      <div className="container mx-auto flex items-center justify-between px-6">
+    <nav className="sticky top-0 z-50 w-full bg-linear-to-r from-blue-500 via-purple-500 to-pink-400 text-white shadow-md py-2">
+      {" "}
+      <div className="container mx-auto flex items-center justify-between px-6">
         <Link
           href="/"
           className="text-2xl font-bold tracking-wide hover:text-yellow-300 transition-colors"
@@ -39,12 +42,6 @@ export default function Header() {
             className="hover:text-yellow-300 transition-colors"
           >
             Contact
-          </Link>
-          <Link
-            href="/profile"
-            className="hover:text-yellow-300 transition-colors"
-          >
-            Profile
           </Link>
         </div>
         {/* Hamburger Icon */}

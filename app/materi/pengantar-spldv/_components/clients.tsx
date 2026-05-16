@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const MateriSPLDV = () => {
   return (
-    <div className="min-h-screen bg-linear-to-b from-blue-100 to-yellow-50 p-6">
+    <div className="min-h-screen bg-[url('/assets/images/home/home2.png')] bg-cover bg-center bg-no-repeat p-6">
       {/* HERO */}
       <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
         <h1 className="text-2xl md:text-3xl font-bold text-blue-600 text-center">
-          Teks Pengantar SPLDV
+          Pengantar SPLDV
         </h1>
       </div>
 
@@ -77,8 +77,8 @@ const MateriSPLDV = () => {
         </p>
 
         <div className="space-y-2">
-          <p>a. Memiliki dua variabel dan berpangkat satu</p>
-          <p>b. persamaan ini menggunakan tanda sama dengan (=)</p>
+          <p>a. Memiliki dua variabel (nilai yang akan dicari misalnya x dan y) dan berpangkat satu, tidak boleh berupa kuadrat , akar, atau pangkat lainnya</p>
+          <p>b. Persamaan ini menggunakan tanda sama dengan (=) bukan pertidaksamaan seperti &lt;, &gt;, ≤, atau ≥ dimana nilai ruas kiri dan ruas kanan persis sama</p>
           <p>c. Tidak melibatkan perkalian antar variabel dalam bentuknya.</p>
         </div>
 
@@ -86,8 +86,15 @@ const MateriSPLDV = () => {
           <p>
             Apakah jika angka berbentuk pecahan tetap termasuk PLDV? Jawabannya,
             iya. Karena pecahan adalah bagian bentuk angka selama memenuhi
-            ciri-ciri seperti penjelasan diatas.
+            ciri-ciri seperti penjelasan diatas, seperti berikut:
           </p>
+          <Image
+            src="/assets/images/spldv/pecahan.jpeg"
+            alt="bentuk umum spldv"
+            width={400}
+            height={200}
+            className="mx-auto"
+          />
         </div>
       </div>
 
@@ -98,7 +105,7 @@ const MateriSPLDV = () => {
           (PLDV) yang meliputi model matematika dan bagian-bagiannya.
           Selanjutnya, kita memasuki materi Sistem Persamaan Linear Dua Variabel
           (SPLDV), jika dalam PLDV hanya ada satu persamaan maka di SPLDV
-          terdapat dua atau lebih persamaan linear yang memiliki dua variabel
+          terdapat sistem (dua atau lebih persamaan linear) yang memiliki dua variabel
           (misalnya: x dan y).
         </p>
       </div>
@@ -109,7 +116,7 @@ const MateriSPLDV = () => {
           Contoh bentuk umum SPLDV bisa dilihat dengan gambar dibawah ini:
         </p>
         <Image
-          src="/assets/images/spldv/bentuk-umum-spldv.jpg"
+          src="/assets/images/spldv/bentuk-umum-spldv.jpeg"
           alt="bentuk umum spldv"
           width={800}
           height={400}
@@ -121,7 +128,7 @@ const MateriSPLDV = () => {
       <div className="bg-linear-to-r from-yellow-300 to-orange-300 p-6 rounded-2xl text-center shadow-lg mb-8">
         <p className="mb-4">Mainkan game ini dengan klik tombol dibawah:</p>
         <Link
-          href="https://petualangan-substitusispldv.my.canva.site/salinan-dari-gamifikasi-petualangan-spldv-metode-substitusi-kelas-8"
+          href="https://petualangan-spldv-8.my.canva.site/c81a6erd15y0zfh3"
           target="_blank"
           className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
         >
@@ -196,7 +203,14 @@ const MateriSPLDV = () => {
           </Link>
         </div>
 
-        <div className="text-center mt-6">
+        <div className="flex justify-center gap-4 mt-6">
+          <Link
+            href={"/materi/tp-cp"}
+            className="bg-gray-500 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+          >
+            Prev
+          </Link>
+
           <Link
             href={"/materi/metode-grafik"}
             className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"

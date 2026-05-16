@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const MetodeEliminasi = () => {
   return (
-    <div className="min-h-screen bg-linear-to-b from-blue-100 to-yellow-50 p-6">
+    <div className="min-h-screen bg-[url('/assets/images/home/home2.png')] bg-cover bg-center bg-no-repeat p-6">
       {/* HERO */}
       <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
         <h1 className="text-2xl md:text-3xl font-bold text-blue-600 text-center">
-          Teks Metode Eliminasi
+          Metode Eliminasi
         </h1>
       </div>
 
@@ -50,7 +51,7 @@ const MetodeEliminasi = () => {
           sebagai berikut:
         </p>
         <Image
-          src="/assets/images/eliminasi/gambar1.png"
+          src="/assets/images/eliminasi/gambar2.png"
           alt="contoh soal"
           width={800}
           height={400}
@@ -69,10 +70,10 @@ const MetodeEliminasi = () => {
             Eliminasi salah satu variabel (misalnya variabel x), samakan
             koefisien x dengan mengalikan persamaan (1) dengan 2.
             <Image
-              src="/assets/images/eliminasi/elim1.png"
+              src="/assets/images/eliminasi/eliminasi3.png"
               alt="eliminasi langkah 1"
-              width={800}
-              height={400}
+              width={400}
+              height={200}
               className="mx-auto rounded-lg mb-4"
             />
           </li>
@@ -81,10 +82,10 @@ const MetodeEliminasi = () => {
             Langkah 2, eliminasi variabel y, samakan koefisien y dengan
             mengalikan persamaan (2) dengan 1.
             <Image
-              src="/assets/images/eliminasi/elim2.png"
+              src="/assets/images/eliminasi/eliminasi4.png"
               alt="eliminasi langkah 1"
-              width={800}
-              height={400}
+              width={400}
+              height={200}
               className="mx-auto rounded-lg mb-4"
             />
           </li>
@@ -129,23 +130,79 @@ const MetodeEliminasi = () => {
       </div>
 
       {/* LATIHAN */}
-      <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
-        <h2 className="mb-4 text-black font-bold">
+      <div className="bg-white rounded-2xl shadow-lg p-6 mb-8 border-4 border-blue-100">
+        <h2 className="mb-3 text-xl text-blue-700 font-bold text-center">
           Kerjakan soal secara mandiri dengan langkah-langkah diatas!
         </h2>
 
-        <p className="text-gray-700">
-          Suatu hari, tercatat: 3 buku matematika dan 2 buku IPA memiliki total
-          halaman 420 sedangkan 1 buku matematika dan 2 buku IPA memiliki total
-          halaman 300 halaman. Berapa jumlah halaman masing-masing buku?
+        <p className="text-gray-700 text-center mb-5">
+          Seorang siswa lupa mencatat rincian barang yang dibelinya. Ia hanya
+          mengingat informasi berikut:
         </p>
+
+        <div className="bg-blue-50 rounded-2xl p-5 mb-5">
+          <ul className="space-y-3 text-gray-800">
+            <li className="flex gap-3">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-600 text-sm font-bold text-white">
+                1
+              </span>
+              <span>
+                Total makanan yang dibeli adalah <strong>10 item</strong>, yang
+                terdiri dari roti dan susu.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-600 text-sm font-bold text-white">
+                2
+              </span>
+              <span>
+                Harga <strong>1 buah roti Rp2.000,00</strong> dan harga{" "}
+                <strong>1 kotak susu Rp3.000,00</strong>.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-600 text-sm font-bold text-white">
+                3
+              </span>
+              <span>
+                Total uang yang dibayarkan adalah{" "}
+                <strong>Rp24.000,00</strong>.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="rounded-2xl bg-yellow-100 p-5 text-center shadow-inner">
+          <p className="mb-4 font-semibold text-gray-800">
+            Tentukan banyaknya roti dan susu yang dibeli oleh siswa tersebut!
+          </p>
+
+          <Link
+            href="https://petualangan-spldvku.my.canva.site/aplikasi-tanpa-judul"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full bg-blue-600 px-7 py-3 font-bold text-white shadow-lg transition hover:scale-105 hover:bg-blue-700"
+          >
+            Buka Kalkulator Eliminasi
+          </Link>
+        </div>
       </div>
 
       {/* NEXT */}
-      <div className="text-center">
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition">
+      <div className="flex justify-center gap-4 mt-6">
+        <Link
+          href={"/materi/metode-subtitusi"}
+          className="bg-gray-500 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+        >
+          Prev
+        </Link>
+
+        <Link
+          href={"/materi/metode-campuran"}
+          className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+        >
           Next
-        </button>
+        </Link>
       </div>
     </div>
   );
