@@ -43,12 +43,6 @@ export default function Header() {
           >
             Contact
           </Link>
-          <Link
-            href="/profile"
-            className="hover:text-yellow-300 transition-colors"
-          >
-            Profile
-          </Link>
         </div>
         {/* Hamburger Icon */}
         <button
