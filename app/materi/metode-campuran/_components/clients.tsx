@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const MetodeCampuran = () => {
   return (
-    <div className="min-h-screen bg-linear-to-b from-blue-100 to-yellow-50 p-6">
+    <div className="min-h-screen bg-[url('/assets/images/home/home2.png')] bg-cover bg-center bg-no-repeat p-6">
       {/* HERO */}
       <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
         <h1 className="text-2xl md:text-3xl font-bold text-blue-600 text-center">
@@ -26,6 +26,13 @@ const MetodeCampuran = () => {
       {/* CONTOH */}
       <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
         <p className="mb-3 text-gray-700 font-medium">Contoh:</p>
+        <Image
+          src="/assets/images/campuran/campuran1.png"
+          alt="contoh soal"
+          width={800}
+          height={400}
+          className="mx-auto rounded-lg mb-4"
+        />
 
         <div className="bg-yellow-100 p-4 rounded-xl mb-4">
           <p className="text-gray-800">
@@ -44,6 +51,13 @@ const MetodeCampuran = () => {
           Ubah soal cerita menjadi model matematika dahulu dan didapatkan
           sebagai berikut:
         </p>
+        <Image
+          src="/assets/images/campuran/campuran2.png"
+          alt="contoh soal"
+          width={800}
+          height={400}
+          className="mx-auto rounded-lg mb-4"
+        />
 
         <p className="text-gray-700 mb-2">
           <strong>Ditanya:</strong> Berapa jumlah roti dan jumlah susu?
@@ -63,10 +77,10 @@ const MetodeCampuran = () => {
             Langkah 1, gunakan metode eliminasi
             {"\n"}
             <Image
-              src="/assets/images/campuran/gambar1.png"
+              src="/assets/images/campuran/campuran3.png"
               alt="contoh soal"
-              width={800}
-              height={400}
+              width={400}
+              height={200}
               className="mx-auto rounded-lg mb-4"
             />
           </li>
@@ -114,19 +128,6 @@ const MetodeCampuran = () => {
         </div>
       </div>
 
-      {/* LATIHAN */}
-      <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
-        <h2 className="mb-4 text-black font-bold">
-          Kerjakan soal secara mandiri dengan langkah-langkah diatas!
-        </h2>
-
-        <p className="text-gray-700">
-          Suatu hari, 2 pensil dan 3 buku tulis berjumlah Rp. 11.000, sedangkan
-          1 pensil dan 1 buku tulis berjumlah Rp. 5.000. Tentukan harga
-          masing-masing!
-        </p>
-      </div>
-
       {/* NEXT */}
       <div className="flex justify-center gap-4 mt-6">
         <Link
@@ -137,7 +138,7 @@ const MetodeCampuran = () => {
         </Link>
 
         <Link
-          href={"/materi/quiz"}
+          href={"/latihan-soal"}
           className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
         >
           Next

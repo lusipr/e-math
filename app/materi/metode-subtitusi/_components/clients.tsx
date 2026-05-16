@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const MetodeSubstitusi = () => {
   return (
-    <div className="min-h-screen bg-linear-to-b from-blue-100 to-yellow-50 p-6">
+    <div className="min-h-screen bg-[url('/assets/images/home/home2.png')] bg-cover bg-center bg-no-repeat p-6">
       {/* HERO */}
       <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
         <h1 className="text-2xl md:text-3xl font-bold text-blue-600 text-center">
