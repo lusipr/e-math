@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import GeoGebraGraph from "./geobra";
+import Link from "next/link";
 
 const MetodeGrafik = () => {
   const a1 = 1,
@@ -17,7 +18,7 @@ const MetodeGrafik = () => {
       {/* HERO */}
       <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
         <h1 className="text-2xl md:text-3xl font-bold text-blue-600 text-center">
-          Teks Metode Grafik
+          Metode Grafik
         </h1>
       </div>
 
@@ -179,10 +180,20 @@ const MetodeGrafik = () => {
       </div>
 
       {/* NEXT */}
-      <div className="text-center">
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition">
+      <div className="flex justify-center gap-4 mt-6">
+        <Link
+          href={"/materi/pengantar-spldv"}
+          className="bg-gray-500 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+        >
+          Prev
+        </Link>
+
+        <Link
+          href={"/materi/metode-subtitusi"}
+          className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+        >
           Next
-        </button>
+        </Link>
       </div>
     </div>
   );

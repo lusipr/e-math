@@ -9,7 +9,7 @@ const MetodeSubstitusi = () => {
       {/* HERO */}
       <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
         <h1 className="text-2xl md:text-3xl font-bold text-blue-600 text-center">
-          Teks Metode Substitusi
+          Metode Substitusi
         </h1>
       </div>
 
@@ -150,17 +150,6 @@ const MetodeSubstitusi = () => {
         </div>
       </div>
 
-      {/* SIMULASI */}
-      <div className="bg-blue-100 p-6 rounded-2xl text-center shadow-lg mb-8">
-        <p className="mb-4">Ikuti cara tersebut dalam simulasi di bawah ini!</p>
-
-        <Link href="https://petualangan-spldv-8.my.canva.site/aplikasi-tanpa-judul" target="_blank">
-          <button className="bg-green-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition">
-            Button mainkan game
-          </button>
-        </Link>
-      </div>
-
       {/* LATIHAN */}
       <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
         <h2 className="mb-4 text-black text-bold">
@@ -173,14 +162,21 @@ const MetodeSubstitusi = () => {
           dan 4 pensil dengan harga Rp13.000. Tentukan harga dari 2 buku tulis
           dan 3 pensil!
         </p>
-      </div>  
+      </div>
 
       {/* NEXT */}
-      <div className="text-center space-x-4">
-        <Link href={"/materi/metode-grafik"} className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition">
+      <div className="flex justify-center gap-4 mt-6">
+        <Link
+          href={"/materi/metode-grafik"}
+          className="bg-gray-500 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+        >
           Prev
         </Link>
-        <Link href={"/materi/metode-eliminasi"} className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition">
+
+        <Link
+          href={"/materi/metode-eliminasi"}
+          className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+        >
           Next
         </Link>
       </div>

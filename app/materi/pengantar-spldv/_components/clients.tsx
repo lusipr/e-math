@@ -9,7 +9,7 @@ const MateriSPLDV = () => {
       {/* HERO */}
       <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
         <h1 className="text-2xl md:text-3xl font-bold text-blue-600 text-center">
-          Teks Pengantar SPLDV
+          Pengantar SPLDV
         </h1>
       </div>
 
@@ -196,7 +196,14 @@ const MateriSPLDV = () => {
           </Link>
         </div>
 
-        <div className="text-center mt-6">
+        <div className="flex justify-center gap-4 mt-6">
+          <Link
+            href={"/materi/tp-cp"}
+            className="bg-gray-500 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+          >
+            Prev
+          </Link>
+
           <Link
             href={"/materi/metode-grafik"}
             className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"

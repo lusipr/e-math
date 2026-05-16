@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const MetodeEliminasi = () => {
   return (
@@ -8,7 +9,7 @@ const MetodeEliminasi = () => {
       {/* HERO */}
       <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
         <h1 className="text-2xl md:text-3xl font-bold text-blue-600 text-center">
-          Teks Metode Eliminasi
+          Metode Eliminasi
         </h1>
       </div>
 
@@ -142,10 +143,20 @@ const MetodeEliminasi = () => {
       </div>
 
       {/* NEXT */}
-      <div className="text-center">
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition">
+      <div className="flex justify-center gap-4 mt-6">
+        <Link
+          href={"/materi/metode-subtitusi"}
+          className="bg-gray-500 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+        >
+          Prev
+        </Link>
+
+        <Link
+          href={"/materi/metode-campuran"}
+          className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+        >
           Next
-        </button>
+        </Link>
       </div>
     </div>
   );
