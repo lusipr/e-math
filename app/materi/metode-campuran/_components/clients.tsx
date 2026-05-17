@@ -128,7 +128,6 @@ const MetodeCampuran = () => {
         </div>
       </div>
 
-      {/* NEXT */}
       <div className="flex justify-center gap-4 mt-6">
         <Link
           href={"/materi/metode-eliminasi"}
