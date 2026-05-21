@@ -55,7 +55,7 @@ const MetodeGrafik = () => {
         <p className="mb-3 text-gray-700 font-medium">Contoh:</p>
         <Image
           // src="/assets/images/grafik/gambar1.PNG"
-          src="/assets/images/eliminasi/gambar1.png"
+          src="/assets/images/eliminasi/gambar1.PNG"
           alt="contoh soal"
           width={800}
           height={400}
