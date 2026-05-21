@@ -78,7 +78,7 @@ const MetodeGrafik = () => {
         <div className="bg-blue-100 p-4 rounded-xl mb-4">
           <Image
             src="/assets/images/grafik/grafik2.png"
-            alt="bentuk umum spldv"
+            alt="gambar grafik 2"
             width={800}
             height={400}
             className="mx-auto"
@@ -115,7 +115,7 @@ const MetodeGrafik = () => {
                 titik-titik yang telah ditemukan.
               </p>
               <div className="flex justify-center">
-                  <video
+                <video
                   className="w-175 md:w-200 h-auto p-6 object-cover rounded-xl shadow-lg"
                   controls
                 >
