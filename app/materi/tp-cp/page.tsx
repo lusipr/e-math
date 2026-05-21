@@ -1,7 +1,7 @@
 import React from 'react'
 import TpCpComponents from './_components/client'
 
-const MateriPage = () => {
+const TpCpPage = () => {
   return (
     <div>
         <TpCpComponents />
@@ -9,4 +9,4 @@ const MateriPage = () => {
   )
 }
 
-export default MateriPage
+export default TpCpPage

@@ -1,7 +1,7 @@
 import React from 'react'
 import MetodeCampuran from './_components/clients'
 
-const MateriPage = () => {
+const MetodeCampuranPage = () => {
   return (
     <div>
         <MetodeCampuran />
@@ -9,4 +9,4 @@ const MateriPage = () => {
   )
 }
 
-export default MateriPage
+export default MetodeCampuranPage
