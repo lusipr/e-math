@@ -1,7 +1,7 @@
 import React from 'react'
 import MetodeSubstitusi from './_components/clients'
 
-const MateriPage = () => {
+const MetodeSubstitusiPage = () => {
   return (
     <div>
         <MetodeSubstitusi />
@@ -9,4 +9,4 @@ const MateriPage = () => {
   )
 }
 
-export default MateriPage
+export default MetodeSubstitusiPage

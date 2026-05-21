@@ -1,7 +1,7 @@
 import React from 'react'
 import MetodeEliminasi from './_components/clients'
 
-const MateriPage = () => {
+const MetodeEliminasiPage = () => {
   return (
     <div>
         <MetodeEliminasi />
@@ -9,4 +9,4 @@ const MateriPage = () => {
   )
 }
 
-export default MateriPage
+export default MetodeEliminasiPage
