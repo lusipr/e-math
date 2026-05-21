@@ -27,7 +27,7 @@ const MetodeSubstitusi = () => {
       <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
         <p className="mb-3 text-gray-700 font-medium">Contoh:</p>
         <Image
-          src="/assets/images/subtitusi/gambar1.png"
+          src="/assets/images/subtitusi/gambar1.jpeg"
           alt="contoh soal"
           width={800}
           height={400}
@@ -47,8 +47,8 @@ const MetodeSubstitusi = () => {
           Ubah soal cerita menjadi model matematika dahulu dan didapatkan:
         </p>
         <Image
-          src="/assets/images/subtitusi/gambar2.png"
-          alt="contoh soal"
+          src="/assets/images/subtitusi/gambar2.jpg"
+          alt="gambar2 substitusi"
           width={800}
           height={400}
           className="mx-auto rounded-lg mb-4"

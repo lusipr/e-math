@@ -28,7 +28,7 @@ const MetodeEliminasi = () => {
       <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
         <p className="mb-3 text-gray-700 font-medium">Contoh:</p>
         <Image
-          src="/assets/images/eliminasi/gambar1.PNG"
+          src="/assets/images/eliminasi/gambar1.jpg"
           alt="contoh soal"
           width={800}
           height={400}
@@ -51,7 +51,7 @@ const MetodeEliminasi = () => {
           sebagai berikut:
         </p>
         <Image
-          src="/assets/images/eliminasi/gambar2.PNG"
+          src="/assets/images/eliminasi/gambar2.jpg"
           alt="contoh soal"
           width={800}
           height={400}
