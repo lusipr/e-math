@@ -54,7 +54,7 @@ const MetodeGrafik = () => {
       <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
         <p className="mb-3 text-gray-700 font-medium">Contoh:</p>
         <Image
-          src="/assets/images/grafik/gambar1.jpg"
+          src="/assets/images/grafik/grafik1.jpg"
           alt="contoh soal"
           width={800}
           height={400}
@@ -77,7 +77,7 @@ const MetodeGrafik = () => {
         </p>
         <div className="bg-blue-100 p-4 rounded-xl mb-4">
           <Image
-            src="/assets/images/grafik/gambar2.png"
+            src="/assets/images/grafik/grafik2.png"
             alt="bentuk umum spldv"
             width={800}
             height={400}
