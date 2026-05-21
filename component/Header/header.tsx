@@ -43,6 +43,12 @@ export default function Header() {
           >
             Contact
           </Link>
+           <Link
+            href="/referensi"
+            className="hover:text-yellow-300 transition-colors"
+          >
+            Referensi
+          </Link>
         </div>
         {/* Hamburger Icon */}
         <button
@@ -67,25 +73,11 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href="/about"
+              href="/menu"
               className="text-blue-700 hover:text-pink-500 transition-colors"
               onClick={() => setMenuOpen(false)}
             >
-              About
-            </Link>
-            <Link
-              href="/materi"
-              className="text-blue-700 hover:text-pink-500 transition-colors"
-              onClick={() => setMenuOpen(false)}
-            >
-              Materi
-            </Link>
-            <Link
-              href="/courses"
-              className="text-blue-700 hover:text-pink-500 transition-colors"
-              onClick={() => setMenuOpen(false)}
-            >
-              Courses
+              Menu
             </Link>
             <Link
               href="/contact"
@@ -93,6 +85,13 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
             >
               Contact
+            </Link>
+             <Link
+              href="/referensi"
+              className="text-blue-700 hover:text-pink-500 transition-colors"
+              onClick={() => setMenuOpen(false)}
+            >
+              Referensi
             </Link>
           </nav>
         </div>
