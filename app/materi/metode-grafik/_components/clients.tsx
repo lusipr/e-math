@@ -54,7 +54,8 @@ const MetodeGrafik = () => {
       <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
         <p className="mb-3 text-gray-700 font-medium">Contoh:</p>
         <Image
-          src="/assets/images/grafik/gambar1.PNG"
+          // src="/assets/images/grafik/gambar1.PNG"
+          src="/assets/images/eliminasi/gambar1.png"
           alt="contoh soal"
           width={800}
           height={400}
@@ -115,7 +116,7 @@ const MetodeGrafik = () => {
                 titik-titik yang telah ditemukan.
               </p>
               <div className="flex justify-center">
-                  <video
+                <video
                   className="w-175 md:w-200 h-auto p-6 object-cover rounded-xl shadow-lg"
                   controls
                 >
