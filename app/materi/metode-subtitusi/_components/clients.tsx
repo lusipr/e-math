@@ -48,7 +48,7 @@ const MetodeSubstitusi = () => {
           Ubah soal cerita menjadi model matematika dahulu dan didapatkan:
         </p>
         <Image
-          src="/assets/images/subtitusi/gambar2.jpg"
+          src="/assets/images/subtitusi/gambar2.png"
           alt="gambar2 substitusi"
           width={800}
           height={400}

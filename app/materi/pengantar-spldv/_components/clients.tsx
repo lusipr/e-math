@@ -142,7 +142,8 @@ const MateriSPLDV = () => {
           tombol di bawah dan mulai mainkan gamenya sekarang juga!
         </p>
         <Link
-          href="https://petualangan-spldv-8.my.canva.site/c81a6erd15y0zfh3"
+          // href="https://petualangan-spldv-8.my.canva.site/c81a6erd15y0zfh3"
+          href="https://utmisulis.my.canva.site/aplikasi-tanpa-judul"
           target="_blank"
           className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
         >
@@ -162,7 +163,7 @@ const MateriSPLDV = () => {
             controls
           >
             <source
-              src="/assets/images/spldv/video-2-mengubah-soal.mov"
+              src="/assets/images/spldv/video-2-spldv.mp4"
               type="video/mp4"
             />
             Browser Anda tidak mendukung video.

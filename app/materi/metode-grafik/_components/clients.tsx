@@ -80,7 +80,7 @@ const MetodeGrafik = () => {
         </p>
         <div className="bg-blue-100 p-4 rounded-xl mb-4">
           <Image
-            src="/assets/images/grafik/grafik2.jpg"
+            src="/assets/images/grafik/grafik2.png"
             alt="gambar grafik 2"
             width={800}
             height={400}

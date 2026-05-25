@@ -713,7 +713,7 @@ export default function MenuUtama() {
             className="
             text-center font-black tracking-wide text-black
             mb-4 sm:mb-5 md:mb-6 lg:mb-7
-            text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
+            text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl
             font-[Nunito,sans-serif]
           "
           >

@@ -51,7 +51,7 @@ const MetodeEliminasi = () => {
           sebagai berikut:
         </p>
         <Image
-          src="/assets/images/eliminasi/gambar2.jpg"
+          src="/assets/images/eliminasi/gambar2.png"
           alt="contoh soal"
           width={800}
           height={400}
