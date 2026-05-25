@@ -37,15 +37,15 @@ const MetodeEliminasi = () => {
         <div className="bg-yellow-100 p-4 rounded-xl mb-4">
           <p className="text-gray-800">
             Di sebuah tempat parkir, terdapat 25 kendaraan yang terdiri dari
-            <strong> sepeda motor (roda 2)</strong> dan{" "}
-            <strong> mobil (roda 4)</strong>. Setelah dihitung, jumlah total
-            roda seluruh kendaraan tersebut adalah 80 buah. Berapakah jumlah
-            mobil dan jumlah sepeda motor di tempat parkir tersebut?
+            <strong>sepeda motor</strong> dan <strong>mobil</strong>. Setelah
+            dihitung, jumlah total roda seluruh kendaraan tersebut adalah 80
+            buah. Berapa banyaknya mobil dan sepeda motor di tempat parkir
+            tersebut?
           </p>
         </div>
 
-        <p className="text-gray-700 font-bold mb-2">Jawaban:</p>
-        <p className="text-gray-700 font-bold mb-2">Diketahui:</p>
+        <h2 className="mb-3 text-gray-700 font-medium">Jawaban:</h2>
+        <h2 className="mb-3 text-gray-700 font-medium">Diketahui:</h2>
         <p className="text-gray-700 mb-2">
           Ubah soal cerita menjadi model matematika dahulu dan didapatkan
           sebagai berikut:
@@ -57,12 +57,12 @@ const MetodeEliminasi = () => {
           height={400}
           className="mx-auto rounded-lg mb-4"
         />
-        <p className="text-gray-700 mb-2">
-          <strong>Ditanya: </strong> Berapa jumlah mobil dan jumlah sepeda motor
-          di tempat parkir tersebut?
-        </p>
+        <h2 className="mb-3 text-gray-700 font-medium">
+          Ditanya: Berapa banyak mobil dan banyak sepeda motor di tempat parkir
+          tersebut?{" "}
+        </h2>
 
-        <p className="text-gray-700 mb-2 font-bold">Dijawab:</p>
+        <h2 className="mb-3 text-gray-700 font-medium">Dijawab:</h2>
         <ul className="list-disc list-inside text-gray-700 space-y-1">
           {/* LANGKAH 1 */}
           <li className="bg-blue-100 p-4 rounded-xl mb-4 text-gray-800 whitespace-pre-line">
@@ -98,7 +98,7 @@ const MetodeEliminasi = () => {
           </p>
 
           <p className="text-gray-700 mb-2">
-            Kesimpulan, jumlah motor (x) adalah 10 dan jumlah mobil (y)adalah
+            Kesimpulan, banyak motor (x) adalah 10 dan banyak mobil (y)adalah
             15. Kita buktikan:
           </p>
 
@@ -117,13 +117,16 @@ const MetodeEliminasi = () => {
               <br />
               2(10) + 4(15) = 80
               <br />
-              20 + 60 = 80 (terbukti)
+              20 + 60 = 80
+              <br />
+              80 = 80 (terbukti)
             </li>
           </ul>
 
           <div className="mt-4 bg-blue-100 p-4 rounded-xl">
             <p>
-              Maka, benar jika jumlah motor yaitu 10 dan jumlah mobil yaitu 15.
+              Maka, benar jika banyak motor yaitu 10 dan jumlah mobil yaitu
+              15.{" "}
             </p>
           </div>
         </div>
@@ -132,7 +135,7 @@ const MetodeEliminasi = () => {
       {/* LATIHAN */}
       <div className="bg-white rounded-2xl shadow-lg p-6 mb-8 border-4 border-blue-100">
         <h2 className="mb-3 text-xl text-blue-700 font-bold text-center">
-          Kerjakan soal secara mandiri dengan langkah-langkah diatas!
+          Kerjakan latihan soal mandiri dibawah ini.{" "}
         </h2>
 
         <p className="text-gray-700 text-center mb-5">
@@ -165,17 +168,21 @@ const MetodeEliminasi = () => {
                 3
               </span>
               <span>
-                Total uang yang dibayarkan adalah{" "}
-                <strong>Rp24.000,00</strong>.
+                Total uang yang dibayarkan adalah <strong>Rp24.000,00</strong>.
               </span>
             </li>
           </ul>
         </div>
-
+        <p className="mb-4 font-semibold text-gray-800">
+          Tentukan banyaknya roti dan susu yang dibeli oleh siswa tersebut!
+        </p>
         <div className="rounded-2xl bg-yellow-100 p-5 text-center shadow-inner">
-          <p className="mb-4 font-semibold text-gray-800">
-            Tentukan banyaknya roti dan susu yang dibeli oleh siswa tersebut!
-          </p>
+          <div className="flex justify-center">
+            <p className="mb-4 font-semibold text-gray-800">
+              Sudah disiapkan Kalkulator Eliminasi Interaktif khusus buat kamu.
+              Tinggal klik, masukkan koesfisien dan konstanta, kemudian BOOM!
+            </p>
+          </div>
 
           <Link
             href="https://petualangan-spldvku.my.canva.site/aplikasi-tanpa-judul"

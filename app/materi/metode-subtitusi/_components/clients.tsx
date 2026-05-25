@@ -41,8 +41,9 @@ const MetodeSubstitusi = () => {
             2kg apel dan 2 kg jeruk.
           </p>
         </div>
-        <p className="text-gray-700 mb-2">Jawaban:</p>
-        <p className="text-gray-700 mb-2">Diketahui:</p>
+        <h2 className="mb-3 text-gray-700 font-medium">Jawaban:</h2>
+        <h2 className="mb-3 text-gray-700 font-medium">Diketahui:</h2>
+
         <p className="text-gray-700 mb-2">
           Ubah soal cerita menjadi model matematika dahulu dan didapatkan:
         </p>
@@ -53,10 +54,11 @@ const MetodeSubstitusi = () => {
           height={400}
           className="mx-auto rounded-lg mb-4"
         />
-        <p className="text-gray-700 mb-2">
+        <h2 className="mb-3 text-gray-700 font-medium">
           Ditanya: Berapa harga 2kg apel dan 2 kg jeruk?
-        </p>
-        <p className="text-gray-700 mb-2">Dijawab:</p>
+        </h2>
+        <h2 className="mb-3 text-gray-700 font-medium">Dijawab:</h2>
+
         <div className="bg-blue-100 p-4 rounded-xl mb-4 text-gray-800">
           <ol className="list-decimal pl-6 space-y-4">
             <li className="pl-2">
@@ -82,7 +84,7 @@ const MetodeSubstitusi = () => {
                 <p>64.000 − 7n = 36.000</p>
                 <p>−7n = 36.000 − 64.000</p>
                 <p>−7n = −28.000</p>
-                <p>n = 4.000</p>
+                <p><strong>n = 4.000</strong></p>
                 <p className="italic">(Harga 1 kg jeruk = Rp 4.000)</p>
               </div>
             </li>
@@ -95,7 +97,7 @@ const MetodeSubstitusi = () => {
                 <p>m = 16.000 − 2,5n</p>
                 <p>m = 16.000 − 2,5(4.000)</p>
                 <p>m = 16.000 − 10.000</p>
-                <p>m = 6.000</p>
+                <p><strong>m = 6.000</strong></p>
                 <p className="italic">(Harga 1 kg apel = Rp 6.000)</p>
               </div>
             </li>
@@ -103,8 +105,8 @@ const MetodeSubstitusi = () => {
         </div>
         <div className="bg-white rounded-2xl shadow-lg p-6 mb-4">
           <p className="text-gray-700 mb-2">
-            Kesimpulan, harga 1kg apel seharga Rp.6000 dan 1kg jeruk seharga
-            Rp.4000, kita buktikan:
+            Kesimpulan, harga <strong>1kg apel</strong> seharga <strong>Rp.6000</strong> dan <strong>1kg jeruk</strong> seharga
+            <strong>Rp.4000</strong>, kita buktikan:
           </p>
           <div className="text-gray-700 space-y-6">
             {/* Pembuktian Persamaan (1) */}
@@ -142,7 +144,7 @@ const MetodeSubstitusi = () => {
 
           <div className="mt-4 bg-blue-100 p-4 rounded-xl">
             <p>
-              kemudian kita diminta mencari nilai dari 2m + 2n (2kg apel + 2kg
+              kemudian kita diminta mencari nilai dari <strong>2m + 2n</strong> (2kg apel + 2kg
               jeruk). Maka, 2(6.000) + 2(4.000) = 12.000 + 8.000 = 20.000 (harga
               2kg apel dan 2 kg jeruk seharga Rp. 20.000)
             </p>

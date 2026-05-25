@@ -60,7 +60,7 @@ const MetodeCampuran = () => {
         />
 
         <p className="text-gray-700 mb-2">
-          <strong>Ditanya:</strong> Berapa jumlah roti dan jumlah susu?
+          <strong>Ditanya:</strong> Berapa banyak roti dan banyak susu?
         </p>
 
         <p className="text-gray-700 mb-2 font-bold">Dijawab:</p>
@@ -96,8 +96,7 @@ const MetodeCampuran = () => {
         {/* HASIL */}
         <div className="bg-white rounded-2xl shadow-lg p-6 mb-4">
           <p className="text-gray-700 mb-2">
-            Kesimpulan, roti berjumlah 8 pcs dan susu berjumlah 12 pcs.
-            Pembuktian:
+            Kesimpulan, roti sebanyak 8pcs dan susu sebanyak 12 pcs. Pembuktian:
           </p>
 
           <ul className="list-disc list-inside text-gray-700 space-y-1">
@@ -121,8 +120,8 @@ const MetodeCampuran = () => {
 
           <div className="mt-4 bg-blue-100 p-4 rounded-xl">
             <p>
-              Maka terbukti bahwa roti berjumlah 8 pcs dan susu berjumlah 12
-              pcs.
+              Maka terbukti bahwa roti sebanyak 8pcs dan susu sebanyak 12
+              pcs.{" "}
             </p>
           </div>
         </div>
