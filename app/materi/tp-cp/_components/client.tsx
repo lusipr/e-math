@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 const TpCpPage = () => {
   return (
@@ -10,7 +11,6 @@ const TpCpPage = () => {
       }}
     >
       <div className="w-full max-w-3xl space-y-6">
-
         {/* CP CARD */}
         <div className="bg-[#e0f6ff] rounded-md shadow-[0_6px_0_#5b7ea6] overflow-hidden">
           <div className="bg-[#9fc3e6] text-center py-3 font-bold text-[#2b4c7e] text-lg">
@@ -36,19 +36,28 @@ const TpCpPage = () => {
           <div className="p-4 text-[#2b4c7e] text-sm">
             <ol className="list-decimal pl-5 space-y-3">
               <li>
-                Peserta didik mampu memahami konsep dasar Sistem Persamaan Linear 
-                Dua Variabel (SPLDV) yang meliputi bentuk umum, ciri-ciri, serta 
-                metode penyelesaiannya melalui website interaktif.
+                1.Peserta didik mampu mendefinisikan konsep dasar Sistem
+                Persamaan Linear Dua Variabel (SPLDV) yang meliputi bentuk umum,
+                ciri-ciri, beserta metode penyelesaiannya melalui website
+                interaktif
               </li>
               <li>
-                Peserta didik mampu menganalisis dan menyelesaikan permasalahan 
-                sehari-hari yang berkaitan dengan SPLDV dengan tepat melalui 
+                Peserta didik mampu menganalisis dan menyelesaikan permasalahan
+                sehari-hari yang berkaitan dengan SPLDV dengan tepat melalui
                 bantuan website interaktif.
               </li>
             </ol>
           </div>
         </div>
 
+        <div className="flex justify-center">
+          <Link
+            href={"/materi/pengantar-spldv"}
+            className="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
+          >
+            Next
+          </Link>
+        </div>
       </div>
     </div>
   );

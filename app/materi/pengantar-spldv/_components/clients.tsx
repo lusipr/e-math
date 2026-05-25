@@ -49,9 +49,9 @@ const MateriSPLDV = () => {
       {/* VIDEO 1 */}
       <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
         <p className="mb-4 text-gray-700">
-          Sebelum memasuki materi Sistem Persamaan Linear Dua Variabel (SPLDV)
-          kita pahami dahulu terkait Persamaan Linear Dua Variabel (PLDV) dengan
-          melihat video dibawah ini!
+          Sebelum memasuki materi Sistem Persamaan Linear Dua Variabel (SPLDV),
+          Yuk, kita pahami dahulu terkait unsur-unsur Persamaan Linear Dua
+          Variabel (PLDV) dengan melihat video dibawah ini!
         </p>
 
         <div className="flex justify-center">
@@ -77,8 +77,16 @@ const MateriSPLDV = () => {
         </p>
 
         <div className="space-y-2">
-          <p>a. Memiliki dua variabel (nilai yang akan dicari misalnya x dan y) dan berpangkat satu, tidak boleh berupa kuadrat , akar, atau pangkat lainnya</p>
-          <p>b. Persamaan ini menggunakan tanda sama dengan (=) bukan pertidaksamaan seperti &lt;, &gt;, ≤, atau ≥ dimana nilai ruas kiri dan ruas kanan persis sama</p>
+          <p>
+            a. Memiliki dua variabel (nilai yang akan dicari misalnya x dan y)
+            dan berpangkat satu, tidak boleh berupa kuadrat , akar, atau pangkat
+            lainnya
+          </p>
+          <p>
+            b. Persamaan ini menggunakan tanda sama dengan (=) bukan
+            pertidaksamaan seperti &lt;, &gt;, ≤, atau ≥ dimana nilai ruas kiri
+            dan ruas kanan persis sama
+          </p>
           <p>c. Tidak melibatkan perkalian antar variabel dalam bentuknya.</p>
         </div>
 
@@ -88,6 +96,8 @@ const MateriSPLDV = () => {
             iya. Karena pecahan adalah bagian bentuk angka selama memenuhi
             ciri-ciri seperti penjelasan diatas, seperti berikut:
           </p>
+          <br />
+          <p>Contohnya :</p>
           <Image
             src="/assets/images/spldv/pecahan.jpeg"
             alt="bentuk umum spldv"
@@ -101,19 +111,20 @@ const MateriSPLDV = () => {
       {/* SPLDV */}
       <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
         <p className="text-gray-700">
-          Karena sudah mengetahui konsep dasar Persamaan Linear Dua Variabel
-          (PLDV) yang meliputi model matematika dan bagian-bagiannya.
-          Selanjutnya, kita memasuki materi Sistem Persamaan Linear Dua Variabel
-          (SPLDV), jika dalam PLDV hanya ada satu persamaan maka di SPLDV
-          terdapat sistem (dua atau lebih persamaan linear) yang memiliki dua variabel
-          (misalnya: x dan y).
+          Kalau tadi kita sudah berhasil menaklukkan Persamaan Linear Dua
+          Variabel (PLDV), sekarang waktunya kita masuk ke materi Sistem
+          Persamaan Linear Dua Variabel (SPLDV)! Bedanya simpel banget: kalau
+          PLDV cuma punya satu persamaan linear, nah di SPLDV kita punya sistem
+          (dua persamaan atau lebih) yang bekerja sama seperti tim, yang
+          mempunyai dua variabel, misalnya x dan y. Keren kan?
         </p>
       </div>
 
       {/* GAMBAR SPLDV */}
       <div className="bg-white rounded-2xl shadow-lg p-6 mb-8 text-center">
         <p className="mb-3">
-          Contoh bentuk umum SPLDV bisa dilihat dengan gambar dibawah ini:
+          Penasaran seperti apa bentuknya? Yuk intip contoh bentuk umum SPLDV di
+          gambar bawah ini! 👇{" "}
         </p>
         <Image
           src="/assets/images/spldv/bentuk-umum-spldv.jpeg"
@@ -126,9 +137,13 @@ const MateriSPLDV = () => {
 
       {/* GAME */}
       <div className="bg-linear-to-r from-yellow-300 to-orange-300 p-6 rounded-2xl text-center shadow-lg mb-8">
-        <p className="mb-4">Mainkan game ini dengan klik tombol dibawah:</p>
+        <p className="mb-4">
+          Yuk, buktikan seberapa jago kamu! 🎮🔥 Jangan cuma duduk diam, klik
+          tombol di bawah dan mulai mainkan gamenya sekarang juga!
+        </p>
         <Link
-          href="https://petualangan-spldv-8.my.canva.site/c81a6erd15y0zfh3"
+          // href="https://petualangan-spldv-8.my.canva.site/c81a6erd15y0zfh3"
+          href="https://utmisulis.my.canva.site/aplikasi-tanpa-judul"
           target="_blank"
           className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition"
         >
@@ -139,9 +154,8 @@ const MateriSPLDV = () => {
       {/* VIDEO 2 */}
       <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
         <p className="mb-4">
-          Setelah memainkan permainan diatas, kita melanjutkan materi bagaimana
-          mengubah soal yang berkaitan sehari-hari menjadi model matematika
-          dengan melalui penjelasan video dibawah ini:
+          Penasaran bagaimana caranya mengubah cerita sehari-hari menjadi
+          persamaan matematika? 🤔💡. Jangan skip video di bawah ini ya! 👇🎬
         </p>
         <div className="flex justify-center">
           <video
@@ -149,7 +163,7 @@ const MateriSPLDV = () => {
             controls
           >
             <source
-              src="/assets/images/spldv/video-2-mengubah-soal.mov"
+              src="/assets/images/spldv/video-2-spldv.mp4"
               type="video/mp4"
             />
             Browser Anda tidak mendukung video.

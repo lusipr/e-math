@@ -61,23 +61,26 @@ const MetodeGrafik = () => {
           className="mx-auto rounded-lg mb-4"
         />
         <p className="mb-3 text-gray-700">Diberikan soal sebagai berikut!</p>
+        <h2 className="mb-3 text-gray-700 font-medium">Jawaban:</h2>
+        <h2 className="mb-3 text-gray-700 font-medium">Diketahui:</h2>
 
         <div className="bg-yellow-100 p-4 rounded-xl mb-4">
           <p className="text-gray-800">
-            Pak Hadi seorang kolektor antik sepeda roda dua dan roda tiga.
-            Jumlah semua sepeda 16 buah dan jumlah semua kaki seluruh sepeda
-            berjumlah 45 buah. Berapakah masing-masing sepeda roda dua dan
-            sepeda roda tiga yang dimiliki Pak Hadi?
+            Pak Hadi seorang kolektor sepeda antik yaitu{" "}
+            <strong>sepeda roda dua </strong> dan
+            <strong>sepeda roda tiga.</strong> Jumlah semua sepeda 16 buah dan
+            jumlah semua kaki seluruh sepeda berjumlah 45 buah. Berapa banyaknya
+            sepeda roda dua dan sepeda roda tiga yang dimiliki Pak Hadi?
           </p>
         </div>
 
         <p className="text-gray-700 mb-3">
-          Nah, sebelum memasuki langkah pertama kita buat dahulu soal tersebut
-          menjadi model matematika.
+          Ubah soal cerita menjadi model matematika dahulu dan didapatkan
+          sebagai berikut:
         </p>
         <div className="bg-blue-100 p-4 rounded-xl mb-4">
           <Image
-            src="/assets/images/grafik/grafik2.jpg"
+            src="/assets/images/grafik/grafik2.png"
             alt="gambar grafik 2"
             width={800}
             height={400}
@@ -86,8 +89,15 @@ const MetodeGrafik = () => {
         </div>
         <p className="text-gray-700">
           Dari model persamaan kedua mengapa didapatkan 2x+ 3y = 45 karena
-          sepeda x punya dua roda dan sepeda y punya 3 roda. Selanjutnya
-          memasuki langkah-langkah penyelesaian SPLDV dengan metode grafik.
+          sepeda x punya dua roda dan sepeda y punya 3 roda.
+        </p>
+        <h2 className="mb-3 text-gray-700 font-medium">
+          Ditanya: Berapa banyaknya sepeda roda dua dan sepeda roda tiga yang
+          dimiliki Pak Hadi?
+        </h2>
+        <h2 className="mb-3 text-gray-700 font-medium">Dijawab:</h2>
+        <p className="text-gray-700 mb-3">
+          Memasuki langkah-langkah penyelesaian SPLDV dengan metode grafik.
         </p>
         <div className="bg-blue-100 rounded-2xl p-6 mb-8 shadow">
           <div className="space-y-3">
@@ -144,11 +154,12 @@ const MetodeGrafik = () => {
 
                 <div className="mt-4 bg-blue-100 p-4 rounded-xl">
                   <p>
-                    Hal ini berarti nilai x = 3 dan y = 13 merupakan solusi yang
-                    memenuhi kedua persamaan. Dalam konteks permasalahan, nilai
-                    x menyatakan jumlah sepeda roda dua sebanyak 3 buah,
-                    sedangkan nilai y menyatakan jumlah sepeda roda tiga
-                    sebanyak 13 buah
+                    Hal ini berarti nilai <strong>x = 3</strong> dan{" "}
+                    <strong>y = 13</strong> merupakan solusi yang memenuhi kedua
+                    persamaan. Dalam konteks permasalahan, nilai x menyatakan
+                    banyak <strong>sepeda roda dua sebanyak 3 buah,</strong>
+                    sedangkan nilai y menyatakan banyak{" "}
+                    <strong>sepeda roda tiga sebanyak 13 buah.</strong>
                   </p>
                 </div>
               </div>
@@ -170,7 +181,7 @@ const MetodeGrafik = () => {
         </p>
         {/* CEK */}
         <div className="bg-blue-100 p-6 rounded-2xl text-center shadow-lg mb-8">
-          <p className="mb-4">Cek grafik kamu disini!</p>
+          <p className="mb-4">Yuk, cek grafik kamu disini!</p>
 
           <GeoGebraGraph
             equations={[`${a1}x + ${b1}y = ${c1}`, `${a2}x + ${b2}y = ${c2}`]}

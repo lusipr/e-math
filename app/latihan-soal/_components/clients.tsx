@@ -96,7 +96,7 @@ const latihanMenu = [
   {
     title: "Metode Campuran",
     icon: BlendIcon,
-    path: "https://soal-campuran-spldv.my.canva.site/",
+    path: "https://petualangan-substitusispldv.my.canva.site/aplikasi-tanpa-judul",
     color: "bg-purple-100 text-purple-600",
   },
 ];
