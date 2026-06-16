@@ -25,7 +25,7 @@ const MetodeGrafik = () => {
       {/* PENGANTAR */}
       <div className="bg-white rounded-2xl shadow-lg p-6 mb-8 text-center">
         <p className="text-gray-700">
-          Metode grafik digunakam untuk menyelesaikan Sistem Persamaan Linear
+          Metode grafik digunakan untuk menyelesaikan Sistem Persamaan Linear
           Dua Variabel (SPLDV) dengan cara menentukan titik perpotongan dari dua
           garis lurus yang mewakili masing-masing persamaan.
         </p>
