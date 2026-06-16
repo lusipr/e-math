@@ -38,16 +38,24 @@ export default function Header() {
             Menu
           </Link>
           <Link
-            href="/contact"
+            href="https://detektif-mathh.netlify.app/"
+            target="_blank"
             className="hover:text-yellow-300 transition-colors"
           >
-            Contact
+            Games
           </Link>
-           <Link
+
+          <Link
             href="/referensi"
             className="hover:text-yellow-300 transition-colors"
           >
             Referensi
+          </Link>
+          <Link
+            href="/contact"
+            className="hover:text-yellow-300 transition-colors"
+          >
+            Contact
           </Link>
         </div>
         {/* Hamburger Icon */}
@@ -80,18 +88,29 @@ export default function Header() {
               Menu
             </Link>
             <Link
-              href="/contact"
+              href="https://detektif-mathh.netlify.app/"
+              // target="_blank"
+              // rel="noopener noreferrer"
               className="text-blue-700 hover:text-pink-500 transition-colors"
+              // className="rounded-lg bg-purple-600 px-4 py-2 text-center font-semibold text-white transition-colors hover:bg-pink-500"
               onClick={() => setMenuOpen(false)}
             >
-              Contact
+              Games
             </Link>
-             <Link
+
+            <Link
               href="/referensi"
               className="text-blue-700 hover:text-pink-500 transition-colors"
               onClick={() => setMenuOpen(false)}
             >
               Referensi
+            </Link>
+            <Link
+              href="/contact"
+              className="text-blue-700 hover:text-pink-500 transition-colors"
+              onClick={() => setMenuOpen(false)}
+            >
+              Contact
             </Link>
           </nav>
         </div>

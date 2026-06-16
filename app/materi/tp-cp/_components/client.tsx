@@ -19,9 +19,21 @@ const TpCpPage = () => {
 
           <div className="h-1 bg-yellow-400"></div>
 
-          <div className="p-4 text-center text-[#2b4c7e] text-sm">
-            Peserta didik dapat menyelesaikan sistem persamaan linear dua
-            variabel melalui beberapa cara untuk penyelesaian masalah.
+          <div className="p-4 text-[#2b4c7e] text-sm">
+            Di akhir fase D peserta didik dapat mengenali, memprediksi dan
+            menggeneralisasi pola dalam bentuk susunan benda dan bilangan.
+            Mereka dapat menyatakan suatu situasi ke dalam bentuk aljabar.
+            Mereka dapat menggunakan sifat-sifat operasi (komutatif, asosiatif,
+            dan distributif) untuk menghasilkan bentuk aljabar yang ekuivalen.
+            Peserta didik dapat memahami relasi dan fungsi (domain, kodomain,
+            range) dan menyajikannya dalam bentuk diagram panah, tabel, himpunan
+            pasangan berurutan, dan grafik. Mereka dapat membedakan beberapa
+            fungsi nonlinear dari fungsi linear secara grafik. Mereka dapat
+            menyelesaikan persamaan dan pertidaksamaan linear satu variabel.
+            Mereka dapat menyajikan, menganalisis, dan menyelesaikan masalah
+            dengan menggunakan relasi, fungsi dan persamaan linear. Mereka dapat
+            menyelesaikan sistem persaman linear dua variabel melalui beberapa
+            cara untuk penyelesaian masalah.
           </div>
         </div>
 
@@ -36,7 +48,7 @@ const TpCpPage = () => {
           <div className="p-4 text-[#2b4c7e] text-sm">
             <ol className="list-decimal pl-5 space-y-3">
               <li>
-                1.Peserta didik mampu mendefinisikan konsep dasar Sistem
+                Peserta didik mampu mendefinisikan konsep dasar Sistem
                 Persamaan Linear Dua Variabel (SPLDV) yang meliputi bentuk umum,
                 ciri-ciri, beserta metode penyelesaiannya melalui website
                 interaktif
